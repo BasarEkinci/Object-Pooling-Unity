@@ -23,7 +23,7 @@ namespace Managers
         #endregion
 
         [SerializeField] private GameObject poolParent;
-        [SerializeField] private Queue<GameObject> PoolableObjectList = new Queue<GameObject>();
+        [SerializeField] private Queue<GameObject> PoolableObjectList;
         [SerializeField] private GameObject poolPrefab;
         [SerializeField] private int poolAmount = 100;
 

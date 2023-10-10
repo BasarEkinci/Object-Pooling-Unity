@@ -11,7 +11,6 @@ namespace Controllers
         {
             Invoke(nameof(EnqueueCheck), 1);
         }
-
         private void EnqueueCheck()
         {
             if (IsCalledByPooling)
@@ -19,7 +18,6 @@ namespace Controllers
                 Invoke(nameof(Enqueue), 1);
             }
         }
-
         private void Enqueue()
         {
             IsCalledByPooling = false;

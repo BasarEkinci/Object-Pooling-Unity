@@ -1,3 +1,5 @@
+using Controllers;
+using Managers;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
